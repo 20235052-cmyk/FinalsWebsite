@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Rescue Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+    <style>
+        .hero {
+            background: url('background.png') center/cover no-repeat;
+            color: white;
+            padding: 120px 0;
+            text-shadow: 2px 2px 6px black;
+        }
+        .animal-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Rescue Paws</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#animals">Animals</a></li>
+                <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
+                <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero text-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Rescue • Love • Adopt</h1>
+        <p class="lead">Giving abandoned animals a second chance at life.</p>
+        <a href="#animals" class="btn btn-primary btn-lg">Meet Our Animals</a>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Our Rescue Mission</h2>
+        <p class="text-center mx-auto" style="max-width: 700px;">
+            Rescue Paws is a non-profit animal rescue dedicated to saving stray and abandoned pets. We provide
+            shelter, medical care, rehabilitation, and help animals find loving forever homes.
+        </p>
+    </div>
+</section>
+
+<!-- AVAILABLE ANIMALS -->
+<section id="animals" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Animals Available for Adoption</h2>
+        <div class="row g-4">
+            <!-- Animal 1 -->
+            <div class="col-md-4">
+                <div class="card animal-card">
+                    <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8" class="card-img-top" alt="Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Buddy</h5>
+                        <p class="card-text">A loving, playful dog looking for a warm home.</p>
+                        <a href="#contact" class="btn btn-primary">Adopt Buddy</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Animal 2 -->
+            <div class="col-md-4">
+                <div class="card animal-card">
+                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" class="card-img-top" alt="Cat">
+                    <div class="card-body">
+                        <h5 class="card-title">Luna</h5>
+                        <p class="card-text">A gentle cat who loves cuddles and quiet evenings.</p>
+                        <a href="#contact" class="btn btn-primary">Adopt Luna</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Animal 3 -->
+            <div class="col-md-4">
+                <div class="card animal-card">
+                    <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0" class="card-img-top" alt="Rabbit">
+                    <div class="card-body">
+                        <h5 class="card-title">Snowy</h5>
+                        <p class="card-text">A calm rabbit perfect for families.</p>
+                        <a href="#contact" class="btn btn-primary">Adopt Snowy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VOLUNTEER SECTION -->
+<section id="volunteer" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Volunteer Opportunities</h2>
+        <p class="text-center mx-auto" style="max-width: 700px;">
+            Join our mission by becoming a volunteer! Help with feeding, walking, cleaning, adoption events, and more.
+            No experience needed—just a heart for animals.
+        </p>
+        <div class="text-center mt-3">
+            <a href="#contact" class="btn btn-success btn-lg">Sign Up to Volunteer</a>
+        </div>
+    </div>
+</section>
+
+<!-- EVENTS SECTION -->
+<section id="events" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Upcoming Events & Fundraisers</h2>
+        <ul class="list-group mx-auto" style="max-width: 600px;">
+            <li class="list-group-item">🐾 Adoption Day – December 15</li>
+            <li class="list-group-item">🎉 Fundraising Walkathon – January 10</li>
+            <li class="list-group-item">📚 Pet Care Workshop – February 2</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-center">Email: rescuepaws@gmail.com | Phone: 0912-345-6789</p>
+        <div class="text-center">
+            <a href="#" class="btn btn-outline-primary me-2">Facebook</a>
+            <a href="#" class="btn btn-outline-info">Instagram</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+    <p>© 2025 Rescue Paws – All Rights Reserved</p>
+</footer>
+
+
+</body>
+</html>
